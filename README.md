@@ -26,11 +26,11 @@ The Check Note icon will appear in your Chrome toolbar. Click it to start using.
 
 
 
-👨‍💻 Developed by
+
+
+## 👨‍💻 Developed by
 
 [Md. Takbir Gazi](http://takbirgazi-dev.vercel.app)
-
-Web Developer
 
 📧 takbirgazibd@gmail.com
 
