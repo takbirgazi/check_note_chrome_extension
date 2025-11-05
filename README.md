@@ -27,6 +27,9 @@ The Check Note icon will appear in your Chrome toolbar. Click it to start using.
 👨‍💻 Developed by
 
 Md. Takbir Gazi
+
 Web Developer
+
 📧 takbirgazibd@gmail.com
+
 [Linkedin](https://www.linkedin.com/in/takbirgazi)
