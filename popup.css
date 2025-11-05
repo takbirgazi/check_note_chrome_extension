@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 350px;
+    margin: 0;
+    padding: 15px;
+    background: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input,
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+li {
+    background: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+}
+
+.note-title {
+    font-weight: bold;
+    color: #222;
+}
+
+.note-description {
+    font-size: 13px;
+    margin-top: 4px;
+    color: #555;
+}
+
+.note-link a {
+    font-size: 12px;
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.note-link a:hover {
+    text-decoration: underline;
+}
+
+.note-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+.check-box {
+    cursor: pointer;
+}
+
+.note-title.checked {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.edit-btn {
+    cursor: pointer;
+    color: #4caf50;
+    font-size: 14px;
+}
+
+.edit-btn:hover {
+    color: #388e3c;
+}
+
+.delete-btn {
+    color: #f44336;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    color: #d32f2f;
+}
