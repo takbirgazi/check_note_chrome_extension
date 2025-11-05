@@ -24,12 +24,14 @@ cd check_note_chrome_extension
 
 The Check Note icon will appear in your Chrome toolbar. Click it to start using.
 
+
+
 👨‍💻 Developed by
 
-Md. Takbir Gazi
+[Md. Takbir Gazi](http://takbirgazi-dev.vercel.app)
 
 Web Developer
 
 📧 takbirgazibd@gmail.com
 
-[Linkedin](https://www.linkedin.com/in/takbirgazi)
+🌐 [LinkedIn](https://www.linkedin.com/in/takbirgazi)
