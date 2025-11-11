@@ -4,23 +4,49 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Check Note</title>
+    <meta name="description"
+        content="Check Note is a Chrome extension that helps you capture, organize, and revisit notes with links on any page." />
+    <meta name="keywords"
+        content="check note, chrome extension notes, productivity checklist, research organizer, save links" />
+    <meta name="author" content="Check Note" />
+    <title>Check Note | Quick Chrome Notes</title>
     <link rel="stylesheet" href="popup.css" />
 </head>
 
 <body>
-    <div class="container">
-        <h2>📝 Check Note</h2>
-        <div class="input-section">
-            <input type="text" id="name" placeholder="Name" />
-            <textarea id="description" placeholder="Description"></textarea>
-            <input type="url" id="link" placeholder="Link (optional)" />
-            <button id="addBtn">Add Note</button>
-        </div>
+    <div class="container" role="application">
+        <header class="popup-header">
+            <h1 class="title">Check Note</h1>
+            <p class="tagline">Capture ideas, tasks, and research links without leaving Chrome.</p>
+        </header>
 
-        <hr />
+        <main>
+            <form id="noteForm" class="input-section" novalidate>
+                <label for="name" class="visually-hidden">Note title</label>
+                <input type="text" id="name" name="name" placeholder="Title" autocomplete="off" required
+                    aria-required="true" />
 
-        <ul id="notesList"></ul>
+                <label for="description" class="visually-hidden">Note details</label>
+                <textarea id="description" name="description" placeholder="Details" rows="4" required
+                    aria-required="true"></textarea>
+
+                <label for="link" class="visually-hidden">Optional HTTPS link</label>
+                <input type="url" id="link" name="link" placeholder="HTTPS link (optional)" pattern="https://.*" />
+
+                <button type="submit" id="addBtn">Add Note</button>
+            </form>
+
+            <p id="statusMessage" class="status-message" role="status" aria-live="polite"></p>
+
+            <hr />
+
+            <ul id="notesList" role="list" aria-label="Saved notes"></ul>
+        </main>
+
+        <footer class="popup-footer">
+            <small>Securely stored with Chrome Sync. Update your listing assets on the Chrome Web Store dashboard for
+                maximum visibility.</small>
+        </footer>
     </div>
 
     <script src="popup.js"></script>
